@@ -5,7 +5,7 @@ if __name__ == '__main__':
     UWB_AOA = aoa.AOA('config.json')
 
     # or create instance by passing port, baudrate parameters.
-    # UWB_AOA = aoa.AOA(port='/dev/ttyUSB1', baudrate=9216000)
+    # UWB_AOA = aoa.AOA(port='/dev/ttyUSB1', baudrate=921600)
 
     try:
         while True:
@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
             # Get data in dictionary format.
             dic_data = UWB_AOA.get_data()
-            #print(dic_data)
+            print(dic_data)
 
     except KeyboardInterrupt:
         print("Press Ctrl-C to terminate while statement")
